@@ -12,4 +12,4 @@ CREATE TABLE AddressBook
  PhoneNumber float,
  EmailID varchar(100)
 );
-
+select * From AddressBook;
