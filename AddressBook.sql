@@ -1,6 +1,7 @@
+/* Created_DataBases*/
 create database AddressBook_DB;
 use AddressBook_DB;
-
+/* Created table for AddressBook*/
 CREATE TABLE AddressBook
 (
  FirstName varchar(50),
@@ -13,6 +14,7 @@ CREATE TABLE AddressBook
  EmailID varchar(100)
 );
 select * From AddressBook;
+/* Inserted Contact Details in AddressBook*/
 INSERT INTO AddressBook 
 (FirstName,LastName,Address,City,state,ZipCode,PhoneNumber,EmailID)
 VALUES
@@ -22,7 +24,7 @@ VALUES
 ('Shuchitra' , 'N', 'BTM Layout 1st Statge', 'Bangalore', 'karnataka',560066,8258669501,'nsuchi09@gamil.com'),
 ('Archana' , 'VM', 'BTM Layout 1st Statge', 'Bangalore', 'karnataka',560072,8252669501,'nsuchi09@gamil.com'),
 ('Madhu' , 'Chandra', 'BTM Layout 1st Statge', 'Bangalore', 'karnataka',560060,8362669501,'ChandraMadhu09@gamil.com');
-
+/* Updated Contact Details in AddressBook for few member*/
 update AddressBook 
 set Address = 'Chikku lakshmaiah layout, Koramangala', ZipCode = 560095
 Where FirstName = 'Madhu';
@@ -30,4 +32,20 @@ select * From AddressBook;
 update AddressBook 
 set Address = 'Gopalapura, Binnipete,Bengaluru', ZipCode = 560023
 Where LastName = 'D';
+
 select * From AddressBook;
+
+ /* Inserted new Contact Details in AddressBook*/
+
+INSERT INTO AddressBook 
+([FirstName],
+[LastName],
+[Address],
+[City],
+[state],
+[ZipCode],
+[PhoneNumber],
+[EmailID])
+VALUES 
+('Awasthi', 'Mehta', '207 marvel Edge 1A, Lohgaon, Viman Nagar', 'Pune', 'Maharashtra',411014,9852669501,'Awasthim369@gamil.com');
+select * from AddressBook;
