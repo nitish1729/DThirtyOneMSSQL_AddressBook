@@ -13,3 +13,7 @@ CREATE TABLE AddressBook
  EmailID varchar(100)
 );
 select * From AddressBook;
+INSERT INTO AddressBook (FirstName,LastName,Address,City,state,ZipCode,PhoneNumber,EmailID)
+VALUES
+('Nitish', 'Mehta', 'BTM Layout 1st Statge', 'Bangalore', 'karnataka',560068,8252669501,'nkm09@gamil.com');
+select * From AddressBook;
