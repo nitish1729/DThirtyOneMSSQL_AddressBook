@@ -23,4 +23,11 @@ VALUES
 ('Archana' , 'VM', 'BTM Layout 1st Statge', 'Bangalore', 'karnataka',560072,8252669501,'nsuchi09@gamil.com'),
 ('Madhu' , 'Chandra', 'BTM Layout 1st Statge', 'Bangalore', 'karnataka',560060,8362669501,'ChandraMadhu09@gamil.com');
 
+update AddressBook 
+set Address = 'Chikku lakshmaiah layout, Koramangala', ZipCode = 560095
+Where FirstName = 'Madhu';
+select * From AddressBook;
+update AddressBook 
+set Address = 'Gopalapura, Binnipete,Bengaluru', ZipCode = 560023
+Where LastName = 'D';
 select * From AddressBook;
