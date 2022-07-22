@@ -49,3 +49,18 @@ INSERT INTO AddressBook
 VALUES 
 ('Awasthi', 'Mehta', '207 marvel Edge 1A, Lohgaon, Viman Nagar', 'Pune', 'Maharashtra',411014,9852669501,'Awasthim369@gamil.com');
 select * from AddressBook;
+/* The ALTER TABLE statement is used to Modifiy in an existing table.*/
+/* ADD Column new column FullName*/
+ALTER TABLE AddressBook 
+ADD FullName varchar(255);
+
+select * from AddressBook;
+
+/* The DELETE statement is used to delete existing records in a table. */
+/* Delete All Records 
+   DELETE FROM table_name;
+*/
+
+DELETE FROM AddressBook WHERE FirstName='Madhu';
+
+select * from AddressBook;
